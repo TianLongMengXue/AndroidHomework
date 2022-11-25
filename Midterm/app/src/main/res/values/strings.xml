@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Midterm</string>
+    <string name="main_name">电话卡系统</string>
+    <string name="tel_number_title">请输入电话卡卡号</string>
+    <string name="tel_password_title">请输入密码</string>
+    <string name="login_button">登录</string>
+    <string name="login_success">登录成功!</string>
+    <string name="tel_number_display">卡号:</string>
+    <string name="tel_extra_money">余额:</string>
+    <string name="tel_charge_title">账户充值:</string>
+    <string name="tel_charge_volume">请输入充值金额</string>
+    <string name="tel_call_title">拨打电话:</string>
+    <string name="tel_call_number">电话号码</string>
+    <string name="ok">OK</string>
+</resources>

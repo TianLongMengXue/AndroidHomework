@@ -1,0 +1,122 @@
+<LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@drawable/gradient_background"
+        android:orientation="vertical"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        tools:context=".MediaPlayerActivity">
+    <!-- 顶部用来占空间填充内容的图片 -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@null">
+        <ImageView
+                android:src="@mipmap/okmnbv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/head_image_view"
+                android:id="@+id/headImageView"/>
+    </LinearLayout>
+    <!-- 音乐播放器 -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:background="@null">
+        <!-- 音乐名称 -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/musicNameTextView"
+                android:text="@string/music_name"
+                android:textColor="@color/colorBlack"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+        <!-- 音乐时间条 -->
+        <SeekBar
+                android:id="@+id/musicSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <!-- 音乐的时间 -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@null">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/currentTimeTextView"
+                    android:layout_weight="1"
+                    android:text="@string/curren_time"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wholeTimeTextView"
+                    android:layout_weight="1"
+                    android:text="@string/whole_time"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+        </LinearLayout>
+        <!-- 音乐控件 -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@null">
+            <!-- 下一首 -->
+            <Button
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/previousButton"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_red_round_background"
+                    android:layout_weight="1"
+                    android:text="@string/previous"
+                    android:textSize="20sp"/>
+            <!-- 开始/暂停 -->
+            <Button
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/playPauseButton"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_red_round_background"
+                    android:layout_weight="1"
+                    android:text="@string/play"
+                    android:textSize="20sp"/>
+            <!-- 中止 -->
+            <Button
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/stopButton"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_red_round_background"
+                    android:layout_weight="1"
+                    android:text="@string/stop"
+                    android:textSize="20sp"/>
+            <!-- 下一首 -->
+            <Button
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/nextButton"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_red_round_background"
+                    android:layout_weight="1"
+                    android:text="@string/next"
+                    android:textSize="20sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

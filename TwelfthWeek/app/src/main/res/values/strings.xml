@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TwelfthWeek</string>
+    <string name="result_message"></string>
+    <string name="action_message">开始录音</string>
+</resources>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">AndroidTest</string>
+    <string name="login_title">Sign In</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login_btn">Sign In</string>
+    <string name="login_tip">Forget your password?</string>
+    <string name="register_title">Sign Up</string>
+    <string name="register_btn">Sign Up</string>
+    <string name="register_tip">Already have a account?</string>
+    <string name="register_link">Or Sign With</string>
+    <string name="labelOne">labelOne</string>
+    <string name="labelTwo">labelTwo</string>
+    <string name="labelThree">labelThree</string>
+    <string name="labelFour">labelFour</string>
+    <string name="labelFive">labelFive</string>
+    <string name="labelSix">labelSix</string>
+    <string name="labelSeven">labelSeven</string>
+    <string name="labelEight">labelEight</string>
+    <string name="labelNight">labelNight</string>
+    <string name="labelTen">labelTen</string>
+    <string name="labelEleven">labelEleven</string>
+</resources>

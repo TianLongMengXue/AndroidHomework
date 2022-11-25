@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" xmlns:ndroid="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/gradient_background"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        tools:context=".MainActivity">
+    <!-- 页面标题 -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:orientation="vertical">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_name"
+                android:textSize="40sp"
+                android:textColor="@color/colorBlack"
+                android:textAlignment="center"/>
+    </LinearLayout>
+    <!-- 电话卡输入区域 -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@null"
+            android:layout_marginTop="10dp">
+        <!-- 电话卡输入框标题 -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tel_number_title"
+                android:textSize="26sp"
+                android:textColor="@color/colorBlack"/>
+        <!-- 电话卡输入框 -->
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/telNumberEditText"
+                android:textSize="20sp"
+                android:singleLine="true"
+                android:hint="@string/tel_number_title"/>
+    </LinearLayout>
+    <!-- 电话卡密码输入区域 -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@null"
+            android:layout_marginTop="10dp">
+        <!-- 电话卡密码输入框标题 -->
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tel_password_title"
+                android:textColor="@color/colorBlack"
+                android:textSize="26sp"/>
+        <!-- 电话卡密码输入框 -->
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/telPasswordEditText"
+                android:inputType="textPassword"
+                android:textSize="20sp"
+                android:singleLine="true"
+                android:hint="@string/tel_password_title"/>
+    </LinearLayout>
+    <!-- 登录确认区域 -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:background="@null">
+        <!-- 登录确认按钮 -->
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/loginButton"
+                android:background="@drawable/circle_angle_red"
+                android:text="@string/login_button"
+                android:textSize="26sp"
+                android:textAllCaps="false"/>
+    </LinearLayout>
+    <!-- 电话卡详细信息区域 -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/telDetailLinearLayout"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:background="@null">
+        <!-- 电话卡详细信息 -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@null">
+            <!-- 电话卡卡号信息显示 -->
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="@string/login_success"
+                    android:textColor="@color/colorRed"
+                    android:textSize="30sp"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telNumberTextView"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/tel_number_display"
+                    android:textSize="26sp"
+                    android:textColor="@color/colorBlack"/>
+            <!-- 电话余额显示 -->
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/telMoneyTextView"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/tel_extra_money"
+                    android:textSize="26sp"
+                    android:textColor="@color/colorBlack"/>
+            <!-- 账户充值区域 -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:background="@null">
+                <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tel_charge_title"
+                        android:layout_weight="1"
+                        android:textSize="20sp"/>
+                <EditText
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/telChargeEditText"
+                        android:hint="@string/tel_charge_volume"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textSize="20sp"
+                        android:layout_weight="3"
+                        android:textColor="@color/colorBlack"/>
+                <Button
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/telChargeButton"
+                        android:layout_weight="1"
+                        android:text="@string/ok"
+                        android:textSize="20sp"
+                        android:background="@drawable/circle_angle_red"/>
+            </LinearLayout>
+            <!-- 拨打电话区域 -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="25dp"
+                    android:background="@null">
+                <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tel_call_title"
+                        android:layout_weight="1"
+                        android:textSize="20sp"/>
+                <EditText
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/telCallEditText"
+                        android:hint="@string/tel_call_number"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textSize="20sp"
+                        android:layout_weight="3"
+                        android:textColor="@color/colorBlack"/>
+                <Button
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/telCallButton"
+                        android:layout_weight="1"
+                        android:text="@string/ok"
+                        android:textSize="20sp"
+                        android:background="@drawable/circle_angle_red"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyMediaPlayerDemo</string>
+    <string name="head_image_view">MM</string>
+    <string name="music_name">MediaPlayer</string>
+    <string name="curren_time">00:00</string>
+    <string name="whole_time">00:00</string>
+    <string name="next">下一首</string>
+    <string name="play">播放</string>
+    <string name="pause">暂停</string>
+    <string name="stop">中止</string>
+    <string name="previous">上一首</string>
+</resources>

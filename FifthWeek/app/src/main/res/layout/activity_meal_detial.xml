@@ -1,0 +1,70 @@
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@drawable/gradient_background"
+        android:orientation="vertical"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        tools:context=".MealDetailActivity">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@null"
+            android:layout_marginTop="30dp">
+        <TextView
+                android:id="@+id/thanksForUsernameDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="@string/thankForUsing"
+                android:textColor="@color/colorRed"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@null"
+            android:layout_marginTop="30dp">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/addressContext"
+                android:textSize="30sp"
+                android:textColor="@color/colorRed"/>
+        <TextView
+                android:id="@+id/addressContextDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/colorRed"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@null"
+            android:layout_marginTop="30dp">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mealList"
+                android:textSize="30sp"
+                android:textColor="@color/colorRed"/>
+        <ListView
+                android:id="@+id/mealListDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@color/colorWhite"
+                android:divider="@color/colorSkyblue"
+                android:dividerHeight="2sp">
+
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

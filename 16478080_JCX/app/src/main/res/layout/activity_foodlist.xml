@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+   <TextView
+       android:id="@+id/tv_name"
+       android:text="小炒肉"
+       android:textSize="24dp"
+       android:layout_width="200dp"
+       android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_price"
+        android:textSize="24dp"
+        android:text="15.00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_update"
+        android:text="修改"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_delect"
+        android:text="删除"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

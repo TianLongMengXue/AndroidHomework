@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NinthWeek</string>
+    <string name="image_one">imageOne</string>
+    <string name="image_two">imageTwo</string>
+    <string name="image_three">imageThree</string>
+    <string name="image_four">imageFour</string>
+    <string name="load_button">加载图片</string>
+</resources>

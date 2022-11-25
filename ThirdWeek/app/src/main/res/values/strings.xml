@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ThirdWeek</string>
+    <string name="login_title">Sign In</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login_button">Sign In</string>
+    <string name="forget_link">Forget Your Password?</string>
+    <string name="register_title">Sign Up</string>
+    <string name="register_button">Sign Up</string>
+    <string name="login_link">Already Have A Account?</string>
+    <string name="register_tip">----------------Or Sign Up with---------------</string>
+    <string name="register_beef">Beef</string>
+    <string name="register_roast_sausage">RoastSausage</string>
+    <string name="register_pork">Pork</string>
+    <string name="labelOne">labelOne</string>
+    <string name="labelTwo">labelTwo</string>
+    <string name="labelThree">labelThree</string>
+    <string name="labelFour">labelFour</string>
+    <string name="labelFive">labelFive</string>
+    <string name="labelSix">labelSix</string>
+    <string name="labelSeven">labelSeven</string>
+    <string name="labelEight">labelEight</string>
+    <string name="labelNight">labelNight</string>
+    <string name="labelTen">labelTen</string>
+    <string name="labelEleven">labelEleven</string>
+</resources>
